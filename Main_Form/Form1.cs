@@ -102,6 +102,7 @@ namespace Main_Form
 
             }
         }
+
     }
     partial class Fruit
     {

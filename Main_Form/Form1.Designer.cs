@@ -29,9 +29,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Timer fps;
             this.label1 = new System.Windows.Forms.Label();
             this.pointlb = new System.Windows.Forms.Label();
+            fps = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // fps
+            // 
+            fps.Interval = 33;
+            fps.Tick += new System.EventHandler(this.fps_Tick);
             // 
             // label1
             // 
@@ -58,9 +66,10 @@
             this.ClientSize = new System.Drawing.Size(797, 592);
             this.Controls.Add(this.pointlb);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
