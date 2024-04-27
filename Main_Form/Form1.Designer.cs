@@ -30,24 +30,35 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.pointlb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(285, 165);
+            this.label1.Location = new System.Drawing.Point(615, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 80);
+            this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "플레시 게임";
+            this.label1.Text = "점수 : ";
+            // 
+            // pointlb
+            // 
+            this.pointlb.AutoSize = true;
+            this.pointlb.Location = new System.Drawing.Point(676, 9);
+            this.pointlb.Name = "pointlb";
+            this.pointlb.Size = new System.Drawing.Size(54, 18);
+            this.pointlb.TabIndex = 1;
+            this.pointlb.Text = "label2";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 789);
+            this.ClientSize = new System.Drawing.Size(797, 592);
+            this.Controls.Add(this.pointlb);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -55,9 +66,10 @@
 
         }
 
-        #endregionas
-
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label pointlb;
+
+# endregionas
     }
 }
 
