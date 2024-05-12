@@ -20,7 +20,6 @@
             base.Dispose(disposing);
         }
 
-        
         #region Windows Form 디자이너에서 생성한 코드
 
         /// <summary>
@@ -29,35 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.timer_down = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // label1
+            // timer_down
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(285, 165);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 80);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "플레시 게임";
+            this.timer_down.Enabled = true;
+            this.timer_down.Interval = 1000;
+            this.timer_down.Tick += new System.EventHandler(this.timer_down_Tick);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 789);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(472, 463);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
-        #endregionas
-
-        private System.Windows.Forms.Label label1;
+        #endregion
+        private System.Windows.Forms.Timer timer_down;
     }
 }
 
