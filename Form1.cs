@@ -456,6 +456,7 @@ namespace study {
 
         private void S_24_Click(object sender, EventArgs e) {
             CustomBtn clickBtn = sender as CustomBtn; //해당 버튼 제거
+        }
     }
 
     public class CustomBtn : Button {
