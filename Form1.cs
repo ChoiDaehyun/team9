@@ -225,6 +225,20 @@ namespace study {
                         pair.Push(a);
                         pre_Btn = a;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + a.getData() == 13) {
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+
+                            //각 click 함수에 count--
+                            //if~ count==0 : 라인에 맞게 점수 추가
+                            //게임 3번까지 하는데 반복문 밖에 점수 변수 선언
+                        }
                     }
                 }
             }
@@ -248,7 +262,31 @@ namespace study {
                         pair.Push(b_1);
                         pre_Btn = b_1;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + b_1.getData() == 13) {
+                            if (pre_Btn == b_2) {
+                                a.resetRight();
+                            }else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            }else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            }else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            }else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            }else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            a.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -272,7 +310,31 @@ namespace study {
                         pair.Push(b_2);
                         pre_Btn = b_2;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + b_2.getData() == 13) {
+                            if (pre_Btn == b_1) {
+                                a.resetLeft();
+                            } else if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            }
+                            a.resetRight();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose(); 
+                        }
                     }
                 }
             }
@@ -296,7 +358,46 @@ namespace study {
                         pair.Push(c_1);
                         pre_Btn = c_1;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + c_1.getData() == 13) {
+                            if (pre_Btn == b_2) {
+                                a.resetRight();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            }
+                            b_1.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -321,7 +422,40 @@ namespace study {
                         pair.Push(c_2);
                         pre_Btn = c_2;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + c_2.getData() == 13) {
+                            if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            b_1.resetRight();
+                            b_2.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -345,7 +479,46 @@ namespace study {
                         pair.Push(c_3);
                         pre_Btn = c_3;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + c_3.getData() == 13) {
+                            if (pre_Btn == b_1) {
+                                a.resetLeft();
+                            } else if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            }
+                            b_2.resetRight();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -369,7 +542,58 @@ namespace study {
                         pair.Push(d_1);
                         pre_Btn = d_1;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + d_1.getData() == 13) {
+                            if (pre_Btn == b_2) {
+                                a.resetRight();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            }
+                            c_1.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -394,7 +618,50 @@ namespace study {
                         pair.Push(d_2);
                         pre_Btn = d_2;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + d_2.getData() == 13) {
+                            if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            }
+                            c_1.resetRight();
+                            c_2.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -419,7 +686,50 @@ namespace study {
                         pair.Push(d_3);
                         pre_Btn = d_3;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + d_3.getData() == 13) {
+                            if(pre_Btn==c_1){
+                                b_1.resetLeft();
+                            }else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            c_2.resetRight();
+                            c_3.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -443,7 +753,58 @@ namespace study {
                         pair.Push(d_4);
                         pre_Btn = d_4;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + d_4.getData() == 13) {
+                            if (pre_Btn == b_1) {
+                                a.resetLeft();
+                            } else if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            }
+                            c_3.resetRight();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -467,7 +828,67 @@ namespace study {
                         pair.Push(e_1);
                         pre_Btn = e_1;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + e_1.getData() == 13) {
+                            if (pre_Btn == b_2) {
+                                a.resetRight();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_4) {
+                                f_3.resetRight();
+                                f_4.resetLeft();   
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            d_1.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -492,7 +913,57 @@ namespace study {
                         pair.Push(e_2);
                         pre_Btn = e_2;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + e_2.getData() == 13) {
+                            if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            d_1.resetRight();
+                            d_2.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -517,7 +988,54 @@ namespace study {
                         pair.Push(e_3);
                         pre_Btn = e_3;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + e_3.getData() == 13) {
+                            if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            d_2.resetRight();
+                            d_3.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -542,7 +1060,57 @@ namespace study {
                         pair.Push(e_4);
                         pre_Btn = e_4;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + e_4.getData() == 13) {
+                            if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            d_3.resetRight();
+                            d_4.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -566,7 +1134,67 @@ namespace study {
                         pair.Push(e_5);
                         pre_Btn = e_5;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + e_5.getData() == 13) {
+                            if (pre_Btn == b_1) {
+                                a.resetLeft();
+                            } else if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_4) {
+                                f_3.resetRight();
+                                f_4.resetLeft();
+                            }
+                            d_4.resetRight();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -590,7 +1218,73 @@ namespace study {
                         pair.Push(f_1);
                         pre_Btn = f_1;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + f_1.getData() == 13) {
+                            if (pre_Btn == b_2) {
+                                a.resetRight();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft() ;
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_4){
+                                f_3.resetRight();
+                                f_4.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            e_1.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -615,7 +1309,61 @@ namespace study {
                         pair.Push(f_2);
                         pre_Btn = f_2;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + f_2.getData() == 13) {
+                            if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_3) {
+                                b_2.resetRight();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_4) {
+                                f_3.resetRight();
+                                f_4.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            e_1.resetRight();
+                            e_2.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -640,7 +1388,55 @@ namespace study {
                         pair.Push(f_3);
                         pre_Btn = f_3;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + f_3.getData() == 13) {
+                            if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == d_4) {
+                                c_3.resetRight();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            e_2.resetRight();
+                            e_3.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -665,7 +1461,55 @@ namespace study {
                         pair.Push(f_4);
                         pre_Btn = f_4;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + f_4.getData() == 13) {
+                            if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            } else if (pre_Btn == e_5) {
+                                d_4.resetRight();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_6) {
+                                f_5.resetRight();
+                                f_6.resetLeft();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            e_3.resetRight();
+                            e_4.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -690,7 +1534,61 @@ namespace study {
                         pair.Push(f_5);
                         pre_Btn = f_5;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + f_5.getData() == 13) {
+                            if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_4) {
+                                f_3.resetRight();
+                                f_4.resetLeft();
+                            } else if (pre_Btn == f_6) {
+                                e_5.resetRight();
+                            } else if (pre_Btn == g_7) {
+                                f_6.resetRight();
+                            }
+                            e_4.resetRight();
+                            e_5.resetLeft();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -714,7 +1612,73 @@ namespace study {
                         pair.Push(f_6);
                         pre_Btn = f_6;
                     } else {//pair 배열에 요소가 있을 떄
+                        int first = 0;
+                        if (pair.Count != 0)
+                            first = pair.Pop().getData();
+                        if (first + f_6.getData() == 13) {
+                            if (pre_Btn == b_1) {
+                                a.resetLeft();
+                            } else if (pre_Btn == c_1) {
+                                b_1.resetLeft();
+                            } else if (pre_Btn == d_1) {
+                                c_1.resetLeft();
+                            } else if (pre_Btn == e_1) {
+                                d_1.resetLeft();
+                            } else if (pre_Btn == f_1) {
+                                e_1.resetLeft();
+                            } else if (pre_Btn == g_1) {
+                                f_1.resetLeft();
+                            } else if (pre_Btn == c_2) {
+                                b_1.resetRight();
+                                b_2.resetLeft();
+                            } else if (pre_Btn == d_2) {
+                                c_1.resetRight();
+                                c_2.resetLeft();
+                            } else if (pre_Btn == e_2) {
+                                d_1.resetRight();
+                                d_2.resetLeft();
+                            } else if (pre_Btn == f_2) {
+                                e_1.resetRight();
+                                e_2.resetLeft();
+                            } else if (pre_Btn == g_2) {
+                                f_1.resetRight();
+                                f_2.resetLeft();
+                            } else if (pre_Btn == d_3) {
+                                c_2.resetRight();
+                                c_3.resetLeft();
+                            } else if (pre_Btn == e_3) {
+                                d_2.resetRight();
+                                d_3.resetLeft();
+                            } else if (pre_Btn == f_3) {
+                                e_2.resetRight();
+                                e_3.resetLeft();
+                            } else if (pre_Btn == g_3) {
+                                f_2.resetRight();
+                                f_3.resetLeft();
+                            } else if (pre_Btn == e_4) {
+                                d_3.resetRight();
+                                d_4.resetLeft();
+                            } else if (pre_Btn == f_4) {
+                                e_3.resetRight();
+                                e_4.resetLeft();
+                            } else if (pre_Btn == g_4) {
+                                f_3.resetRight();
+                                f_4.resetLeft();
+                            } else if (pre_Btn == f_5) {
+                                e_4.resetRight();
+                                e_5.resetLeft();
+                            } else if (pre_Btn == g_5) {
+                                f_4.resetRight();
+                                f_5.resetLeft();
+                            }
+                            e_5.resetRight();
 
+                            this.Controls.Remove(clickBtn);
+                            clickBtn.Dispose();
+
+                            Controls.Remove(pre_Btn);
+                            pre_Btn.Dispose();
+                        }
                     }
                 }
             }
@@ -737,7 +1701,76 @@ namespace study {
                     pair.Push(g_1);
                     pre_Btn = g_1;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_1.getData() == 13) {
+                        if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        f_1.resetLeft();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -760,7 +1793,62 @@ namespace study {
                     pair.Push(g_2);
                     pre_Btn = g_2;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_2.getData() == 13) {
+                        if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        f_1.resetRight();
+                        f_2.resetLeft();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -783,7 +1871,53 @@ namespace study {
                     pair.Push(g_3);
                     pre_Btn = g_3;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_3.getData() == 13) {
+                        if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        f_2.resetRight();
+                        f_3.resetLeft();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -806,7 +1940,50 @@ namespace study {
                     pair.Push(g_4);
                     pre_Btn = g_4;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_4.getData() == 13) {
+                        if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        f_3.resetRight();
+                        f_4.resetLeft();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -829,7 +2006,53 @@ namespace study {
                     pair.Push(g_5);
                     pre_Btn = g_5;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_5.getData() == 13) {
+                        if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        f_4.resetRight();
+                        f_5.resetLeft();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -852,7 +2075,62 @@ namespace study {
                     pair.Push(g_6);
                     pre_Btn = g_6;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_6.getData() == 13) {
+                        if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        f_5.resetRight();
+                        f_6.resetLeft();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -874,7 +2152,76 @@ namespace study {
                     pair.Push(g_7);
                     pre_Btn = g_7;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + g_7.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        }
+                        f_6.resetRight();
 
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
+
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -890,7 +2237,86 @@ namespace study {
                     pair.Push(S_1);
                     pre_Btn = S_1;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_1.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -906,7 +2332,86 @@ namespace study {
                     pair.Push(S_2);
                     pre_Btn = S_2;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_2.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -922,7 +2427,86 @@ namespace study {
                     pair.Push(S_3);
                     pre_Btn = S_3;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_3.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -938,7 +2522,86 @@ namespace study {
                     pair.Push(S_4);
                     pre_Btn = S_4;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_4.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -954,7 +2617,86 @@ namespace study {
                     pair.Push(S_5);
                     pre_Btn = S_5;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_5.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -970,7 +2712,86 @@ namespace study {
                     pair.Push(S_6);
                     pre_Btn = S_6;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_6.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -986,7 +2807,86 @@ namespace study {
                     pair.Push(S_7);
                     pre_Btn = S_7;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_7.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1002,7 +2902,86 @@ namespace study {
                     pair.Push(S_8);
                     pre_Btn = S_8;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_8.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1018,7 +2997,86 @@ namespace study {
                     pair.Push(S_9);
                     pre_Btn = S_9;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_9.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1034,7 +3092,86 @@ namespace study {
                     pair.Push(S_10);
                     pre_Btn = S_10;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_10.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1050,7 +3187,86 @@ namespace study {
                     pair.Push(S_11);
                     pre_Btn = S_11;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_11.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1066,7 +3282,86 @@ namespace study {
                     pair.Push(S_12);
                     pre_Btn = S_12;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_12.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1082,7 +3377,86 @@ namespace study {
                     pair.Push(S_13);
                     pre_Btn = S_13;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_13.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1098,7 +3472,86 @@ namespace study {
                     pair.Push(S_14);
                     pre_Btn = S_14;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_14.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1114,7 +3567,86 @@ namespace study {
                     pair.Push(S_15);
                     pre_Btn = S_15;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_15.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1130,7 +3662,86 @@ namespace study {
                     pair.Push(S_16);
                     pre_Btn = S_16;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_16.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1146,7 +3757,86 @@ namespace study {
                     pair.Push(S_17);
                     pre_Btn = S_17;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_17.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1162,7 +3852,86 @@ namespace study {
                     pair.Push(S_18);
                     pre_Btn = S_18;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_18.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1178,7 +3947,86 @@ namespace study {
                     pair.Push(S_19);
                     pre_Btn = S_19;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_19.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1194,7 +4042,86 @@ namespace study {
                     pair.Push(S_20);
                     pre_Btn = S_20;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_20.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1210,7 +4137,86 @@ namespace study {
                     pair.Push(S_21);
                     pre_Btn = S_21;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_21.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1226,7 +4232,86 @@ namespace study {
                     pair.Push(S_22);
                     pre_Btn = S_22;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_22.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1242,7 +4327,86 @@ namespace study {
                     pair.Push(S_23);
                     pre_Btn = S_23;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_23.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
@@ -1258,7 +4422,86 @@ namespace study {
                     pair.Push(S_24);
                     pre_Btn = S_24;
                 } else {//pair 배열에 요소가 있을 떄
+                    int first = 0;
+                    if (pair.Count != 0)
+                        first = pair.Pop().getData();
+                    if (first + S_24.getData() == 13) {
+                        if (pre_Btn == b_1) {
+                            a.resetLeft();
+                        } else if (pre_Btn == c_1) {
+                            b_1.resetLeft();
+                        } else if (pre_Btn == d_1) {
+                            c_1.resetLeft();
+                        } else if (pre_Btn == e_1) {
+                            d_1.resetLeft();
+                        } else if (pre_Btn == f_1) {
+                            e_1.resetLeft();
+                        } else if (pre_Btn == g_1) {
+                            f_1.resetLeft();
+                        } else if (pre_Btn == b_2) {
+                            a.resetRight();
+                        } else if (pre_Btn == c_2) {
+                            b_1.resetRight();
+                            b_2.resetLeft();
+                        } else if (pre_Btn == d_2) {
+                            c_1.resetRight();
+                            c_2.resetLeft();
+                        } else if (pre_Btn == e_2) {
+                            d_1.resetRight();
+                            d_2.resetLeft();
+                        } else if (pre_Btn == f_2) {
+                            e_1.resetRight();
+                            e_2.resetLeft();
+                        } else if (pre_Btn == g_2) {
+                            f_1.resetRight();
+                            f_2.resetLeft();
+                        } else if (pre_Btn == c_3) {
+                            b_2.resetRight();
+                        } else if (pre_Btn == d_3) {
+                            c_2.resetRight();
+                            c_3.resetLeft();
+                        } else if (pre_Btn == e_3) {
+                            d_2.resetRight();
+                            d_3.resetLeft();
+                        } else if (pre_Btn == f_3) {
+                            e_2.resetRight();
+                            e_3.resetLeft();
+                        } else if (pre_Btn == g_3) {
+                            f_2.resetRight();
+                            f_3.resetLeft();
+                        } else if (pre_Btn == d_4) {
+                            c_3.resetRight();
+                        } else if (pre_Btn == e_4) {
+                            d_3.resetRight();
+                            d_4.resetLeft();
+                        } else if (pre_Btn == f_4) {
+                            e_3.resetRight();
+                            e_4.resetLeft();
+                        } else if (pre_Btn == g_4) {
+                            f_3.resetRight();
+                            f_4.resetLeft();
+                        } else if (pre_Btn == e_5) {
+                            d_4.resetRight();
+                        } else if (pre_Btn == f_5) {
+                            e_4.resetRight();
+                            e_5.resetLeft();
+                        } else if (pre_Btn == g_5) {
+                            f_4.resetRight();
+                            f_5.resetLeft();
+                        } else if (pre_Btn == f_6) {
+                            e_5.resetRight();
+                        } else if (pre_Btn == g_6) {
+                            f_5.resetRight();
+                            f_6.resetLeft();
+                        } else if (pre_Btn == g_7) {
+                            f_6.resetRight();
+                        }
+                        this.Controls.Remove(clickBtn);
+                        clickBtn.Dispose();
 
+                        Controls.Remove(pre_Btn);
+                        pre_Btn.Dispose();
+                    }
                 }
             }
         }
