@@ -238,6 +238,55 @@ namespace study {
                             //각 click 함수에 count--
                             //if~ count==0 : 라인에 맞게 점수 추가
                             //게임 3번까지 하는데 반복문 밖에 점수 변수 선언
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3||pre_Btn==d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4||pre_Btn==e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5||pre_Btn==f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6||pre_Btn==g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
+                            //13 맞춰서 터지면 5점 추가 하는 것 생각해보기
                         }
                     }
                 }
@@ -286,6 +335,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -334,6 +433,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose(); 
+                            
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -397,6 +546,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -455,6 +654,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -518,6 +767,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -593,6 +892,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -661,6 +1010,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -729,6 +1128,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -804,6 +1253,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -888,6 +1387,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -963,6 +1512,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1035,6 +1634,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1110,6 +1759,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1194,6 +1893,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1284,6 +2033,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1363,6 +2162,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1436,6 +2285,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1509,6 +2408,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1588,6 +2537,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1678,6 +2677,56 @@ namespace study {
 
                             Controls.Remove(pre_Btn);
                             pre_Btn.Dispose();
+
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+
+                            if (pre_Btn == a) {
+                                counta--;
+                                if (counta == 0) {
+                                    score += 500;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                                countb--;
+                                if (countb == 0) {
+                                    score += 250;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                                countc--;
+                                if (countc == 0) {
+                                    score += 150;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                                countd--;
+                                if (countd == 0) {
+                                    score += 100;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                                counte--;
+                                if (counte == 0) {
+                                    score += 75;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                                countf--;
+                                if (countf == 0) {
+                                    score += 50;
+                                    lbScore.Text = score.ToString();
+                                }
+                            } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                                countg--;
+                                if (countg == 0) {
+                                    score += 25;
+                                    lbScore.Text = score.ToString();
+                                }
+                            }
                         }
                     }
                 }
@@ -1770,6 +2819,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -1848,6 +2947,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -1917,6 +3066,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -1983,6 +3182,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2052,6 +3301,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2130,6 +3429,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2221,6 +3570,56 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        countg--;
+                        if (countg == 0) {
+                            score += 25;
+                            lbScore.Text = score.ToString();
+                        }
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2316,6 +3715,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2411,6 +3854,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2506,6 +3993,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2601,6 +4132,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2696,6 +4271,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2791,6 +4410,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2886,6 +4549,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -2981,6 +4688,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3076,6 +4827,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3171,6 +4966,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3266,6 +5105,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3361,6 +5244,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3456,6 +5383,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3551,6 +5522,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3646,6 +5661,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3741,6 +5800,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3836,6 +5939,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -3931,6 +6078,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -4026,6 +6217,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -4121,6 +6356,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -4216,6 +6495,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -4311,6 +6634,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -4406,6 +6773,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
@@ -4501,6 +6912,50 @@ namespace study {
 
                         Controls.Remove(pre_Btn);
                         pre_Btn.Dispose();
+
+                        if (pre_Btn == a) {
+                            counta--;
+                            if (counta == 0) {
+                                score += 500;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == b_1 || pre_Btn == b_2) {
+                            countb--;
+                            if (countb == 0) {
+                                score += 250;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == c_1 || pre_Btn == c_2 || pre_Btn == c_3) {
+                            countc--;
+                            if (countc == 0) {
+                                score += 150;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == d_1 || pre_Btn == d_2 || pre_Btn == d_3 || pre_Btn == d_4) {
+                            countd--;
+                            if (countd == 0) {
+                                score += 100;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == e_1 || pre_Btn == e_2 || pre_Btn == e_3 || pre_Btn == e_4 || pre_Btn == e_5) {
+                            counte--;
+                            if (counte == 0) {
+                                score += 75;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == f_1 || pre_Btn == f_2 || pre_Btn == f_3 || pre_Btn == f_4 || pre_Btn == f_5 || pre_Btn == f_6) {
+                            countf--;
+                            if (countf == 0) {
+                                score += 50;
+                                lbScore.Text = score.ToString();
+                            }
+                        } else if (pre_Btn == g_1 || pre_Btn == g_2 || pre_Btn == g_3 || pre_Btn == g_4 || pre_Btn == g_5 || pre_Btn == g_6 || pre_Btn == g_7) {
+                            countg--;
+                            if (countg == 0) {
+                                score += 25;
+                                lbScore.Text = score.ToString();
+                            }
+                        }
                     }
                 }
             }
