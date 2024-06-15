@@ -1,15 +1,17 @@
-﻿using System;
+﻿using Main_Form;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Main_Form
+using WindowsFormproject;
+namespace teamproject
 {
     class Game
     {
         Diagram now;
+        Board gboard = Board.GameBoard;
         internal Point NowPosition
         {
             get
@@ -37,6 +39,16 @@ namespace Main_Form
             get;
             private set;
         }
+        internal int this[int x, int y]
+        {
+            get
+            {
+                return gboard[x, y];
+            }
+        }
+
+        internal int Score { get; private set; }
+
         static Game()
         {
             Singleton = new Game();
@@ -44,7 +56,9 @@ namespace Main_Form
         Game()
         {
             now = new Diagram();
+            Score = 0;
         }
+
         internal bool MoveLeft()
         {
             for (int xx = 0; xx < 4; xx++)
@@ -60,8 +74,13 @@ namespace Main_Form
                     }
                 }
             }
-            now.MoveLeft();
-            return true;
+
+            if (gboard.MoveEnable(now.BlockNum, Turn, now.X - 1, now.Y))
+            {
+                now.MoveLeft();
+                return true;
+            }
+            return false;
         }
 
         internal bool MoveRight()
@@ -79,8 +98,12 @@ namespace Main_Form
                     }
                 }
             }
-            now.MoveRight();
-            return true;
+            if (gboard.MoveEnable(now.BlockNum, Turn, now.X + 1, now.Y))
+            {
+                now.MoveRight();
+                return true;
+            }
+            return false;
         }
 
         internal bool MoveDown()
@@ -93,13 +116,19 @@ namespace Main_Form
                     {
                         if ((now.Y + yy + 1) >= GameRule.BY)
                         {
+                            gboard.Store(now.BlockNum, Turn, now.X, now.Y);
                             return false;
                         }
                     }
                 }
             }
-            now.MoveDown();
-            return true;
+            if (gboard.MoveEnable(now.BlockNum, Turn, now.X, now.Y + 1))
+            {
+                now.MoveDown();
+                return true;
+            }
+            gboard.Store(now.BlockNum, Turn, now.X, now.Y);
+            return false;
         }
 
         internal bool MoveTurn()
@@ -117,14 +146,28 @@ namespace Main_Form
                     }
                 }
             }
-
-            now.MoveTurn();
-            return true;
+            if (gboard.MoveEnable(now.BlockNum, (Turn + 1) % 4, now.X, now.Y))
+            {
+                now.MoveTurn();
+                return true;
+            }
+            return false;
         }
 
-        internal void Next()
+        internal bool Next()
         {
             now.ReSet();
+            return gboard.MoveEnable(now.BlockNum, Turn, now.X, now.Y);
+        }
+
+        internal void ReStart()
+        {
+            gboard.ClearBoard();
+        }
+
+        internal void AddScore(int linesCleared)
+        {
+            Score += linesCleared * 1000;
         }
     }
 }

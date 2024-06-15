@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Main_Form;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Main_Form
+namespace teamproject
 {
     public partial class Form1 : Form
     {
@@ -36,6 +37,23 @@ namespace Main_Form
             DoubleBuffered = true;
             DrawGraduation(e.Graphics);
             DrawDiagram(e.Graphics);
+            DrawBoard(e.Graphics);
+        }
+
+        private void DrawBoard(Graphics graphics)
+        {
+            for (int xx = 0; xx < bx; xx++)
+            {
+                for (int yy = 0; yy < by; yy++)
+                {
+                    if (game[xx, yy] != 0)
+                    {
+                        Rectangle now_rt = new Rectangle(xx * bwidth + 2, yy * bheight + 2, bwidth - 4, bheight - 4);
+                        graphics.DrawRectangle(Pens.Green, now_rt);
+                        graphics.FillRectangle(Brushes.Red, now_rt);
+                    }
+                }
+            }
         }
 
         private void DrawDiagram(Graphics graphics)
@@ -52,7 +70,6 @@ namespace Main_Form
                     {
                         Rectangle now_rt = new Rectangle((now.X + xx) * bwidth + 2, (now.Y + yy) * bheight + 2, bwidth - 4, bheight - 4);
                         graphics.DrawRectangle(dpen, now_rt);
-                        //graphics.FillRectangle(Brushes.Green, now_rt);
                     }
                 }
             }
@@ -104,9 +121,20 @@ namespace Main_Form
             {
                 case Keys.Right: MoveRight(); return;
                 case Keys.Left: MoveLeft(); return;
-                case Keys.Space: MoveDown(); return;
+                case Keys.Space: MoveSSDown(); return;
                 case Keys.Up: MoveTurn(); return;
+                case Keys.Down: MoveDown(); return;
             }
+        }
+
+        private void MoveSSDown()
+        {
+            while (game.MoveDown())
+            {
+                Region rg = MakeRegion(0, -1);
+                Invalidate(rg);
+            }
+            EndingCheck();
         }
 
         private void MoveTurn()
@@ -127,8 +155,30 @@ namespace Main_Form
             }
             else
             {
-                game.Next();
+                EndingCheck();
+            }
+        }
+
+        private void EndingCheck()
+        {
+            if (game.Next())
+            {
                 Invalidate();
+            }
+            else
+            {
+                timer_down.Enabled = false;
+
+                if (DialogResult.Yes == MessageBox.Show("다시 하시겠습니까?\n" + "Score : " + game.Score, "Game Over", MessageBoxButtons.YesNo))
+                {
+                    game.ReStart();
+                    timer_down.Enabled = true;
+                    Invalidate();
+                }
+                else
+                {
+                    this.Close();
+                }
             }
         }
 

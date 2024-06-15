@@ -1,4 +1,4 @@
-﻿namespace Main_Form
+﻿namespace teamproject
 {
     partial class Form1
     {
