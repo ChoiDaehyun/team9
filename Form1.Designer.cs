@@ -83,7 +83,7 @@
             this.lbScore = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbBoard = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -650,6 +650,7 @@
             this.btnDrawR.TabIndex = 29;
             this.btnDrawR.Text = "뽑기\r\n(재활용)";
             this.btnDrawR.UseVisualStyleBackColor = true;
+            this.btnDrawR.Click += new System.EventHandler(this.btnDrawR_Click);
             // 
             // btnDraw
             // 
@@ -660,6 +661,7 @@
             this.btnDraw.TabIndex = 30;
             this.btnDraw.Text = "뽑기";
             this.btnDraw.UseVisualStyleBackColor = true;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // btnNew
             // 
@@ -670,6 +672,7 @@
             this.btnNew.TabIndex = 31;
             this.btnNew.Text = "새로운 보드";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnEnd
             // 
@@ -712,23 +715,23 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Board";
             // 
-            // label4
+            // lbBoard
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("휴먼매직체", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(756, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 33);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "0";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbBoard.AutoSize = true;
+            this.lbBoard.Font = new System.Drawing.Font("휴먼매직체", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbBoard.Location = new System.Drawing.Point(756, 29);
+            this.lbBoard.Name = "lbBoard";
+            this.lbBoard.Size = new System.Drawing.Size(34, 33);
+            this.lbBoard.TabIndex = 36;
+            this.lbBoard.Text = "1";
+            this.lbBoard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 850);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbBoard);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbScore);
@@ -835,7 +838,7 @@
         private System.Windows.Forms.Label lbScore;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbBoard;
     }
 }
 

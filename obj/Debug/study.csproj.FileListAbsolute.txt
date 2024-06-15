@@ -18,3 +18,13 @@ C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\tea
 C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun - 원본\obj\Debug\study.csproj.CoreCompileInputs.cache
 C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun - 원본\obj\Debug\study.exe
 C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun - 원본\obj\Debug\study.pdb
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\bin\Debug\study.exe.config
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\bin\Debug\study.exe
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\bin\Debug\study.pdb
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.csproj.AssemblyReference.cache
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.Form1.resources
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.Properties.Resources.resources
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.csproj.GenerateResource.cache
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.csproj.CoreCompileInputs.cache
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.exe
+C:\Users\ck983\OneDrive\바탕 화면\학교\3-1\응용소프트웨어실습\team9-daehyun\obj\Debug\study.pdb
