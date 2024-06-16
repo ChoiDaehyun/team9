@@ -6,16 +6,38 @@ using System.Threading.Tasks;
 
 namespace Main_Form
 {
+
+    enum FruitNum
+    {
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        purple,
+        black,
+    }
+
+    enum FruitState
+    {
+        CurFruitState,
+        FallState,
+        StopState,
+        NeedFallState,
+    }
+
     internal class Fruit
     {
+        private FruitState fruitState = FruitState.CurFruitState;
         private FruitNum fruitID = FruitNum.red;
         private int[] color = new int[3];
         private float[] pos = new float[2] { 320, 40 }; // 중점
-        private int speed; // 속도
+        private int speed = 1; // 속도
         private int radius = 40; // 반지름
-        private int mass; // 질량
-        private int force; //힘
-        private bool collide = false; // curFruit여부
+        //private int mass; // 질량
+        //private int force; //힘
+
         public FruitNum GetFruitID()
         {
             return fruitID;
@@ -32,9 +54,35 @@ namespace Main_Form
         {
             return radius;
         }
-        public bool GetCollide()
+
+        public FruitState GetFruitState()
         {
-            return collide;
+            return fruitState;
+        }
+
+        public int GetSpeed()
+        {
+            return speed;
+        }
+        public void IncreaseSpeed()
+        {
+            speed++;
+        }
+        public void SetSpeed(int speed)
+        {
+            this.speed = speed;
+        }
+        public void SetToFallState()
+        {
+            fruitState = FruitState.FallState;
+        }
+        public void SetToStopState()
+        {
+            fruitState = FruitState.StopState;
+        }
+        public void SetToNeedFallState()
+        {
+            fruitState = FruitState.StopState;
         }
         public void SetFruitID(FruitNum newFruitID)
         {
@@ -64,20 +112,6 @@ namespace Main_Form
         {
             this.radius = newRadius;
         }
-        public void SetCollide() {
-            this.collide = true;
-        }
     }
 
-    enum FruitNum
-    {
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        indigo,
-        purple,
-        black,
-    }
 }
