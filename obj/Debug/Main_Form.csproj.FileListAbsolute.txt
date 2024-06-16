@@ -1,0 +1,10 @@
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\Main_Form.csproj.AssemblyReference.cache
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\Main_Form.Properties.Resources.resources
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\Main_Form.csproj.GenerateResource.cache
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\Main_Form.csproj.CoreCompileInputs.cache
+C:\Users\rickys\Source\Repos\team9\Main_Form\bin\Debug\Main_Form.exe.config
+C:\Users\rickys\Source\Repos\team9\Main_Form\bin\Debug\Main_Form.exe
+C:\Users\rickys\Source\Repos\team9\Main_Form\bin\Debug\Main_Form.pdb
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\Main_Form.exe
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\Main_Form.pdb
+C:\Users\rickys\Source\Repos\team9\Main_Form\obj\Debug\teamproject.Form_tetris.resources
