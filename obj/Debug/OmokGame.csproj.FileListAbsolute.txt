@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\GameTesting\GameTesting\bin\Debug\GameTesting.exe.config
+C:\Users\user\source\repos\GameTesting\GameTesting\bin\Debug\GameTesting.exe
+C:\Users\user\source\repos\GameTesting\GameTesting\bin\Debug\GameTesting.pdb
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\OmokGame.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\GameTesting.omok.resources
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\GameTesting.Properties.Resources.resources
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\OmokGame.csproj.GenerateResource.cache
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\OmokGame.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\GameTesting.exe
+C:\Users\user\source\repos\GameTesting\GameTesting\obj\Debug\GameTesting.pdb

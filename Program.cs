@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Suika_Game
+namespace GameTesting
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Suika_Game
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SuikaGame());
+            Application.Run(new omok());
         }
     }
 }
