@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace Main_Form
+namespace Suika_Game
 {
     partial class SuikaGame
     {
@@ -40,7 +40,7 @@ namespace Main_Form
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.fps = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new Main_Form.DoubleBufferedPanel();
+            this.panel1 = new Suika_Game.DoubleBufferedPanel();
             this.SuspendLayout();
             // 
             // label1

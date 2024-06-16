@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Linq;
 
-namespace Main_Form
+namespace Suika_Game
 {
     public partial class SuikaGame : Form
     {

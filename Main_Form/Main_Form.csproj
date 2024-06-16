@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{904C4542-ABB7-4288-99B4-CA5944296EBC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Main_Form</RootNamespace>
-    <AssemblyName>Main_Form</AssemblyName>
+    <RootNamespace>Suika_Game</RootNamespace>
+    <AssemblyName>Suika_Game</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

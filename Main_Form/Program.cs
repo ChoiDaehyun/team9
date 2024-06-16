@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Main_Form
+namespace Suika_Game
 {
     internal static class Program
     {

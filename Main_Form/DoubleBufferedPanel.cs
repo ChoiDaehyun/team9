@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Main_Form
+namespace Suika_Game
 {
     public class DoubleBufferedPanel : System.Windows.Forms.Panel
     {
