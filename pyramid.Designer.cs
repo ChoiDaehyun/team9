@@ -683,6 +683,7 @@
             this.btnEnd.TabIndex = 32;
             this.btnEnd.Text = "게임 종료";
             this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
             // lbScore
             // 
@@ -726,7 +727,7 @@
             this.lbBoard.Text = "1";
             this.lbBoard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // pyramid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -768,7 +769,7 @@
             this.Controls.Add(this.b_2);
             this.Controls.Add(this.b_1);
             this.Controls.Add(this.a);
-            this.Name = "Form1";
+            this.Name = "pyramid";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
