@@ -37,14 +37,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "플레시 게임";
             // 
-            // Form2
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 493);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Form1";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
