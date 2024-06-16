@@ -1,10 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-using System.Drawing.Printing;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Xml.Linq;
-
-namespace Suika_Game
+﻿namespace team9_wm
 {
     partial class SuikaGame
     {
@@ -34,95 +28,91 @@ namespace Suika_Game
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pointlb = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.fps = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new Suika_Game.DoubleBufferedPanel();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(600, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "점수 : ";
-            // 
-            // pointlb
-            // 
-            this.pointlb.AutoSize = true;
-            this.pointlb.Location = new System.Drawing.Point(640, 5);
-            this.pointlb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.pointlb.Name = "pointlb";
-            this.pointlb.Size = new System.Drawing.Size(38, 12);
-            this.pointlb.TabIndex = 1;
-            this.pointlb.Text = "label2";
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(600, 160);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(85, 401);
-            this.panel2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(603, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 12);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "<- limit";
+            components = new System.ComponentModel.Container();
+            fps = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            pointlb = new Label();
+            panel1 = new DoubleBufferedPanel();
+            panel2 = new Panel();
+            label2 = new Label();
+            SuspendLayout();
             // 
             // fps
             // 
-            this.fps.Interval = 16;
-            this.fps.Tick += new System.EventHandler(this.fps_Tick);
+            fps.Interval = 16;
+            fps.Tick += fps_Tick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(857, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 25);
+            label1.TabIndex = 0;
+            label1.Text = "점수 : ";
+            // 
+            // pointlb
+            // 
+            pointlb.AutoSize = true;
+            pointlb.Location = new Point(914, 12);
+            pointlb.Name = "pointlb";
+            pointlb.Size = new Size(60, 25);
+            pointlb.TabIndex = 1;
+            pointlb.Text = "label2";
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 560);
-            this.panel1.TabIndex = 2;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(856, 932);
+            panel1.TabIndex = 2;
             // 
-            // SuikaGame
+            // panel2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(684, 561);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pointlb);
-            this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.Name = "SuikaGame";
-            this.Text = "SuikaGame";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Location = new Point(857, 267);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(113, 665);
+            panel2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(861, 155);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(72, 25);
+            label2.TabIndex = 4;
+            label2.Text = "<- limit";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(977, 935);
+            Controls.Add(label2);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(pointlb);
+            Controls.Add(label1);
+            DoubleBuffered = true;
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            KeyDown += Form1_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer fps;
         private Label label1;
         private Label pointlb;
         private Panel panel2;
         private Label label2;
         private DoubleBufferedPanel panel1;
-        public Timer fps;
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Suika_Game
+namespace team9_wm
 {
 
     enum FruitNum
@@ -19,8 +19,7 @@ namespace Suika_Game
         black,
     }
 
-    enum FruitState
-    {
+    enum FruitState { 
         CurFruitState,
         FallState,
         StopState,
@@ -60,20 +59,17 @@ namespace Suika_Game
             return fruitState;
         }
 
-        public int GetSpeed()
-        {
+        public int GetSpeed() { 
             return speed;
         }
         public void IncreaseSpeed()
         {
-            speed++;
+            speed +=2 ;
         }
-        public void SetSpeed(int speed)
-        {
+        public void SetSpeed(int speed) {
             this.speed = speed;
         }
-        public void SetToFallState()
-        {
+        public void SetToFallState() {
             fruitState = FruitState.FallState;
         }
         public void SetToStopState()

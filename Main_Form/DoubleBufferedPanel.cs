@@ -4,14 +4,13 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace Suika_Game
+namespace team9_wm
 {
-    public class DoubleBufferedPanel : System.Windows.Forms.Panel
+    public class DoubleBufferedPanel : Panel
     {
         public DoubleBufferedPanel() { 
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.DoubleBuffer
         | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
             this.UpdateStyles();
         

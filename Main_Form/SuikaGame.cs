@@ -1,18 +1,14 @@
-ï»¿using System.Collections.Generic;
-using System;
 using System.Drawing;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using System.Linq;
 
-namespace Suika_Game
+namespace team9_wm
 {
     public partial class SuikaGame : Form
     {
-        static int point = 0; // ì ìˆ˜ ê´€ë¦¬
-        List<Fruit> fruits; // ë™ì  ìƒì„± ê³¼ì¼ ê´€ë¦¬
-        List<int[]> colors; // ê³¼ì¼ ì»¬ëŸ¬ ì €ì¥ ì»¨í…Œì´ë„ˆ
-        Queue<Fruit> nextFruit; // ë‹¤ìŒ ê³¼ì¼ ì €ì¥ í
+        static int point = 0; // Á¡¼ö °ü¸®
+        List<Fruit> fruits; // µ¿Àû »ı¼º °úÀÏ °ü¸®
+        List<int[]> colors; // °úÀÏ ÄÃ·¯ ÀúÀå ÄÁÅ×ÀÌ³Ê
+        Queue<Fruit> nextFruit; // ´ÙÀ½ °úÀÏ ÀúÀå Å¥
         Fruit curFruit;
         Random rand = new Random();
         Graphics g;
@@ -25,6 +21,7 @@ namespace Suika_Game
             colors = new List<int[]>();
             nextFruit = new Queue<Fruit>();
             curFruit = new Fruit();
+            point = 0;
 
             InitializeComponent();
             InitializeColors();
@@ -58,7 +55,7 @@ namespace Suika_Game
             }
         }
 
-        //curFruitê´€ë¦¬
+        //curFruit°ü¸®
         private void ManagementCurFruit()
         {
             if (fruits.Count == 0 || CheckCurFruit())
@@ -72,7 +69,7 @@ namespace Suika_Game
 
 
 
-        // ì „ì²´ ê³¼ì¼ ê·¸ë¦¬ê¸°
+        // ÀüÃ¼ °úÀÏ ±×¸®±â
         private void DrawFruit()
         {
             DrawFruitInQueue();
@@ -92,7 +89,7 @@ namespace Suika_Game
         }
 
 
-        // ì¡°ì¢…ì¤‘ì¸ ê³¼ì¼ì´ ì—†ìœ¼ë©´ true , else false
+        // Á¶Á¾ÁßÀÎ °úÀÏÀÌ ¾øÀ¸¸é true , else false
         private bool CheckCurFruit()
         {
             foreach (Fruit fruitinL in fruits)
@@ -105,7 +102,7 @@ namespace Suika_Game
             return true;
         }
 
-        // ë‹¤ìŒ 5ê°œì˜ ê³¼ì¼ì„ ë³´ì—¬ì¤Œ
+        // ´ÙÀ½ 5°³ÀÇ °úÀÏÀ» º¸¿©ÁÜ
         private void DrawFruitInQueue()
         {
             g = this.panel2.CreateGraphics();
@@ -121,7 +118,7 @@ namespace Suika_Game
         }
 
 
-        //í•©ì³ì§ ì²˜ë¦¬
+        //ÇÕÃÄÁü Ã³¸®
         private void CombineFruit(int idx1, int idx2)
         {
             int curid = (int)fruits[idx1].GetFruitID();
@@ -137,19 +134,19 @@ namespace Suika_Game
             }
         }
 
-        //ê³¼ì¼ê°„ ê±°ë¦¬ ì²´í¬ í•¨ìˆ˜ ì¶©ëŒì‹œ true
+        //°úÀÏ°£ °Å¸® Ã¼Å© ÇÔ¼ö Ãæµ¹½Ã true
         private bool checkLength(int idx1, int idx2)
         {
             float[] idx1Pos = fruits[idx1].GetPos();
             float[] idx2Pos = fruits[idx2].GetPos();
             int idx1Radius = fruits[idx1].GetRadius();
             int idx2Radius = fruits[idx2].GetRadius();
-            float lengthPow = ((idx1Pos[0] - idx2Pos[0]) * (idx1Pos[0] - idx2Pos[0]))
+            float lengthPow = ((idx1Pos[0] - idx2Pos[0] ) * (idx1Pos[0] - idx2Pos[0]))
                 + ((idx1Pos[1] - idx2Pos[1]) * (idx1Pos[1] - idx2Pos[1]));
 
             if (lengthPow - 3200 < ((idx1Radius * idx1Radius) + (idx2Radius * idx2Radius)))
             {
-                return true; //ì•„ë˜ì— ê³¼ì¼ ìˆìœ¼ë©´ true
+                return true; //¾Æ·¡¿¡ °úÀÏ ÀÖÀ¸¸é true
             }
 
             return false;
@@ -166,13 +163,13 @@ namespace Suika_Game
 
             if (FruitArrivedToBottom(fruits[idx1]) || (idx1Pos[1] < idx2Pos[1] && lengthPow - 3200 < ((idx1Radius * idx1Radius) + (idx2Radius * idx2Radius))))
             {
-                return true; //ì•„ë˜ì— ê³¼ì¼ ìˆìœ¼ë©´ true
+                return true; //¾Æ·¡¿¡ °úÀÏ ÀÖÀ¸¸é true
             }
 
             return false;
         }
 
-        //í˜„ì¬ ê³¼ì¼ ë°”ë‹¥ì— ë‹¿ì•˜ëŠ”ì§€ í™•ì¸ ë°”ë‹¥ì— ë‹¿ìœ¼ë©´ true
+        //ÇöÀç °úÀÏ ¹Ù´Ú¿¡ ´ê¾Ò´ÂÁö È®ÀÎ ¹Ù´Ú¿¡ ´êÀ¸¸é true
         private bool CurFruitArrivedToBottom()
         {
             int bottom = this.panel1.Height;
@@ -193,7 +190,7 @@ namespace Suika_Game
             return true;
         }
 
-        //í˜„ì¬ ê³¼ì¼ ë‹¤ë¥¸ ê³¼ì¼ì— ì¶©ëŒ
+        //ÇöÀç °úÀÏ ´Ù¸¥ °úÀÏ¿¡ Ãæµ¹
         private bool CurFruitCheckCollision()
         {
             if (fruits.Count < 2) { return false; }
@@ -238,7 +235,7 @@ namespace Suika_Game
             return false;
         }
 
-        //ê³¼ì¼ ì¶©ëŒì‹œ Combineì²˜ë¦¬
+        //°úÀÏ Ãæµ¹½Ã CombineÃ³¸®
         private void CheckCollision()
         {
             if (fruits.Count < 2)
@@ -268,17 +265,16 @@ namespace Suika_Game
                 DrawFruit(fruit);
                 collideCheck = !FruitArrivedToBottom(fruit) && !FruitBottomCheckCollision(idx);
             }
-
+            
             if (!collideCheck)
             {
                 fruit.SetToStopState();
                 fruit.SetSpeed(1);
             }
         }
-
-
-        private void CheckAnotherFruit()
-        {
+        
+        
+        private void CheckAnotherFruit() {
             bool collideCheck = false;
             if (fruits.Count <= 2)
             {
@@ -288,26 +284,24 @@ namespace Suika_Game
             {
                 for (int j = 0; j < fruits.Count - 1; j++)
                 {
-                    if (i != j && checkBottomLength(i, j))
-                    {
+                    if (i != j && checkBottomLength(i, j)) {
                         collideCheck = true;
                         break;
-                    }
+                    }       
                 }
 
                 if (!collideCheck)
                 {
                     fruits[i].SetToNeedFallState();
                     fruits[i].IncreaseSpeed();
-                    FallAnotherFruit(fruits[i], i);
+                    FallAnotherFruit(fruits[i] , i);
                 }
-                else
-                {
+                else {
                     collideCheck = false;
                 }
             }
         }
-
+        
         private void EraseFruit(int idx)
         {
             myBrush = new SolidBrush(Color.White);
@@ -370,11 +364,9 @@ namespace Suika_Game
             }
         }
 
-        private void curFruitDown()
-        {
+        private void curFruitDown() {
             bool collideCheck = !CurFruitArrivedToBottom() && !CurFruitCheckCollision();
-            for (int i = 0; i < curFruit.GetSpeed() && collideCheck; i++)
-            {
+            for (int i = 0; i < curFruit.GetSpeed() && collideCheck; i++) {
                 EraseCurFruitDown();
                 curFruit.GoBottom();
                 DrawCurFruit();
@@ -420,18 +412,17 @@ namespace Suika_Game
 
         private void fps_Tick(object sender, EventArgs e)
         {
-            if (curFruit.GetFruitState() == FruitState.FallState)
-            {
+            if (curFruit.GetFruitState() == FruitState.FallState) {
                 EraseCurFruitDown();
                 curFruitDown();
                 curFruit.IncreaseSpeed();
             }
 
-
+            
             DrawFruit();
             ManagementCurFruit();
             CheckCollision();
-            CheckAnotherFruit(); // ë‹¤ë¥¸ ê³¼ì¼ì´ ì¶©ëŒë¡œ ì¸í•´ ë– ìˆì„ ê²½ìš°
+            CheckAnotherFruit(); // ´Ù¸¥ °úÀÏÀÌ Ãæµ¹·Î ÀÎÇØ ¶°ÀÖÀ» °æ¿ì
             pointlb.Text = point.ToString();
 
             GameOver();
@@ -442,6 +433,14 @@ namespace Suika_Game
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.DoubleBuffer
 | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
         }
+
     }
 
 }
+
+/*
+    ÇöÀç ÀÌ½´
+    1. collide Á¤È®ÇÏ°Ô -> checkLength¸¦ Á» »ìÆìº¸°í
+    2. Ãæµ¹ÈÄ ºØ ¶ß´Â°Å -> queue¿¡¼­ ¶á°Å È®ÀÎÇØ¼­ Áß·Â ÀçÁ¶Á¤
+    3. line Áö¿öÁö´Â°Å  -> curFruit À§Ä¡°¡ ÀÏÁ¤ ÀÌÇÏ·Î °¡¸é ´Ù½Ã ±×¸®ÀÚ
+ */
